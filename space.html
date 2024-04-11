@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        body {
+            width: 1440px;
+            height: 926px;
+            top: 102px;
+            scale: crop;
+            font-family: Arial, sans-serif;
+            background-image: url('https://s3-alpha-sig.figma.com/img/dd3e/d775/3db1994c36fa3f55d4d0d7707da6002d?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Xm-B5hbtFv41JjdBiN3nMCVHWPdCLNwKThoFFW2UsYyOO4ekwM2REOWMK7n63X~LHtvgrQtr7SmGupHg4UxVBIsWr-tERKz6pdITWz~pTMF3fmg~c4tI4yWbtL3Mdbl6TeFy5D81bTvuj46aYBGElXcJfdFgeoLvBI3lU3h-SFluEyGhO25KT5ctCtwCXzDCoFunciUnvgaOn2lMO5IC3uYHJDVYr2iFZ2nsZ34-eccA8n44QfhMYPj01t5Ksv3fW1Y5uD6C~pexi4gy3hf-MPdC196O2BqD-jQJmzKURwjN0TyuaFsSSeoXVwrwnN7pVuan9~nJlDLwi5kUv6Csmw__');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0;            
+        }
+
+        .button {
+            font-family: Work Sans;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 23.46px;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+
+        hr {
+            border: 1px solid white;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 300px;
+        }
+
+        .image-description {
+            margin-top: 20px;
+        }
+
+        .contact-form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #ffffff;            
+            height: 61px;
+            top: 71px;
+            left: 190px;
+            margin: 50px 50px 50px 50px;           
+            border-radius: 64px 64px 64px 64px;
+            opacity: 0px;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar img {
+            height: 50px;
+            margin: 10px;
+        }
+
+        .navbar img.left {
+            float: left;
+        }
+
+        .navbar img.right {
+            float: right;
+        }
+
+        .rectangle {
+            width: 1477px;
+            height: 91px;
+            top: 1378px;
+            left: 5px;
+            gap: 0px;
+            margin-left: -9px;
+            background-color: #000000;
+            border: 2px solid #000000;
+            padding: 20px;
+            margin-top: 100px;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;            
+        }
+
+        .solid-background {
+            position: relative;
+            z-index: 0;            
+            background-color: #01010e;           
+            padding: 0px;
+            margin-left: -9px;
+            width: 1520px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {           
+            text-align: left;
+        }
+
+        .button a {}
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="navbar">
+            <img class="left" src="C:\Users\SPOORTI\Downloads\Vector.png" alt="Left Image">
+            <a href="#home"
+                style="width: 58px; height: 23px; top: 90px;left: 435px;gap: 0px; opacity: 0px; font-family: Work Sans; font-size: 20px;font-weight: 500; line-height: 23.46px;text-align: left; margin-left: 50px; margin-right: 50px;">Home</a>
+            <a href="#about" style="width: 110px;
+                    height: 23px;
+                    top: 90px;
+                    left: 533px;
+                    gap: 0px;
+                    opacity: 0px;
+                    font-family: Work Sans;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 23.46px;
+                    text-align: left;
+                    margin-left: 50px; 
+                    margin-right: 50px;">Collections</a>
+            <a href="#services" style="width: 43px;
+                    height: 23px;
+                    top: 90px;
+                    left: 703px;
+                    gap: 0px;
+                    opacity: 0px;
+                    font-family: Work Sans;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 23.46px;
+                    text-align: left;margin-left: 50px; margin-right: 50px;">Blog</a>
+            <a href="#portfolio" style="width: 89px;
+                    height: 23px;
+                    top: 90px;
+                    left: 786px;
+                    gap: 0px;
+                    opacity: 0px;
+                    font-family: Work Sans;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 23.46px;
+                    text-align: left;margin-left: 50px; margin-right: 50px;">About Us</a>
+            <a href="#contact" style="width: 90px;
+                    height: 23px;
+                    top: 90px;
+                    left: 915px;
+                    gap: 0px;
+                    opacity: 0px;
+                    font-family: Work Sans;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 23.46px;
+                    text-align: left;">Join Now</a>
+            <img src="C:\Users\SPOORTI\Downloads\lucide_user.png" class="right">
+        </div>      
+        <div class="container">
+            <h1 style="width: 1032px;
+                    height: 238px;
+                    top: 289px;
+                    left: 204px;
+                    gap: 0px;
+                    border: 2px 0px 0px 0px;     
+                    font-family:'Red Hat Display';
+                    font-size: 180.15px;
+                    font-weight: 800;
+                    line-height: 238.34px;
+                    margin-left: 280px;
+                    text-align: center;">Atom Space</h1>
+            <p style="font-family: Work Sans;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 23.46px;
+                    text-align: center;
+                    width: 874px;
+                    margin-left: 400px;
+                    height: 46px;
+                    top: 548px;
+                    left: 283px;
+                    margin-bottom: 50px;">Lorem ipsum dolor sit amet consectetur. Et arcu habitasse dignissim turpis faucibus mi sagittis duis tortor.Aliquam adipiscing nam tellus sem sem lorem.</p>
+            <button class="button" style="width: 229px;
+                height: 52px;
+                top: 641px;
+                left: 467px;
+                gap: 0px;
+                border-radius: 8px ;
+                border: 1.5px ;
+                text-align: center;
+                margin-left: 500px;
+                opacity: 0px;">Explore more
+            </button>
+            <button class="button" style="width: 229px;
+                height: 52px;
+                top: 641px;
+                left: 744px;
+                gap: 0px;
+                border-radius: 8px ;
+                border: 1.5px;
+                /* opacity: 0px; */
+                text-align: center;
+                margin-left: 30px;
+                background-color: #000;
+                border: 2px solid #000000;
+                color: #ddd;">Sample Button 
+            </button>
+
+            
+            <div style="width: 1477px;
+            height: 10px;
+            top: 1378px;
+            left: 5px;
+            gap: 0px;
+            margin-top: 430px;
+            margin-left: -9px;
+            opacity: 0.5;
+            background-color: #000000;
+            border: 2px solid #000000;
+            padding: 20px;" class="rectangle"></div>
+            </div>
+        
+        <div class="solid-background">
+            <table>
+                <tr>
+                    <td style="padding-top: 20px; width: 50%;
+                    ">
+                        <div class="image-container">
+                            <img src="Burst-pucker-2" alt="Image "
+                                style="margin-top: 50px; margin-left: -530px;padding-left: -9px;">
+                            <p style="font-family: Work Sans;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 18.77px;
+                                    text-align: left;
+                                    padding-left: 162px;
+                                    margin-right: 90px;
+                                    margin-top: -18px;
+                            ">Lorem ipsum dolor sit amet consectetur. Et <br> arcu habitasse dignissim turpis faucibus mi <br> sagittis duis tortor. </p>
+                            <button class="button" style="width: 180px;
+                                    height: 42px;
+                                    top: 1186px;
+                                    left: 89px;
+                                    text-align: center;
+                                    border-radius: 40px ;
+                                    opacity: 0px;
+                                    font-family: Work Sans;
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    line-height: 23.46px;
+                                    text-align: center;
+                                    margin-left: -335px;">Find Out</button>
+                        </div>
+                    </td>
+                    <td style="margin-left: 10px;font-family: Work Sans;
+                            font-size: 40px;
+                            font-weight: 400;
+                            line-height: 46.92px;
+                            text-align: left;
+                            padding-top: 20px;
+                            padding-left: 152px;
+                            width: 50%;">Lorem ipsum dolor sit amet <br>consectetur. Et arcu habitasse dignissim turpis
+                    </td>
+                </tr>
+            </table>
+            
+            <div class="rectangle">
+                <img style="width: 227px;
+            height: 57px;
+            top: 1395px;
+            left: 72px;
+            scale: crop;
+            opacity: 80%;
+            margin-top: 20px;
+            margin-left: 55px;
+            filter: grayscale(100%);" 
+            src="https://s3-alpha-sig.figma.com/img/6351/862c/7383ee99b20fe80081cb6b365d2177a8?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dqwAQoXaY83LOjS5rSjnUmeSp2QMFP0Y4zL175M8-vTz0mawoF590CXDIWIEz8TXT9OjUyLa8nDLo92X3ZzRzul7FJmd1tmVOo92qjqEeV6fuIvJyAmCvnUcNlW~tnsWsgktcB28RfQ-ncJqoN3rMxa6AQ7gmrK5OK~RoKBusWgtSyiW2mlaLdXhtcFR6--RiCNMNGkenkrwisPBPykX64JoU6y89Et8OwSS7aT3ZJg-JXZ4BBl7it4~kDoz5nE8EqrWLYqUaLSwlMH~A~WJbJI3WHNo7fTC5B53syd4oXwD2v4r9wHe5blqD2Sr8RogO7Ht1IVXgJcImjqwDxS7EQ__"
+                    alt="Image 1" width="100">
+                <img style="width: 121px;
+            height: 69px;
+            top: 1389px;
+            left: 371px;
+            opacity: 80%;
+            margin-left: 35px;
+            filter: grayscale(100%);
+            " src="https://s3-alpha-sig.figma.com/img/8683/eb83/3e8205af96a9ab98ac185052f167309e?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PrOHvA9KH9DKmyL2bbw7HR7Ti6ZvtcWjw6y92o2PGoH8D4UiXJY4Y10rLRHe~XloH2cqaRDkl7Ebfs7LBevTBmzeWVkZtdexMSdXVVEB063KH7P7j~3zg7dB2KwP6i7m3dQdfH5-PudOy4haSdCV8nDjXJmNdPJYM5GfW9Fh2Ea~VZf5iJ1NyfjlqJ2CfGJQgXKKxq87h8pYGIgHQZKpe-JvK0bkn4gT~eoU~QFcBU6qkueHmEMnJfTS8SRETwRiK1~cs4Or5CVOzlbtXTZ5-prrBRmPxgyvCUcmK9lxeWBhWb4I1TJDWkKfG83-X-43igvOXcgYl7DKr7KNO8tLNg__"
+                    alt="Image 2" width="100">
+                <img style="width: 128px;
+            height: 47px;
+            top: 1405px;
+            left: 564px;
+            opacity: 80%;
+            margin-left: 90px;
+            filter: grayscale(100%);
+            " src="https://s3-alpha-sig.figma.com/img/7985/c304/6ced05d984207b83437075e3da3a78bc?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JEykypo~V6Px2XMfZeIshsVwGtVDZhMeOt180ryq4OhPYdzAvzKn6GUKW6hcQLZ6uFg-HCeteehgk~e0S5INnNoP945NvoC5fPEa5KJyymU5F0kutnmokLyG9HydbxRvAf46rrBfhgZt0EETKdf-afhkLsfMoYo0Teu~o~y1LvHBr~hgC0BbNcmGruFkpJa6D7pUFoE43oUEjX8maDGidC35uGCBz2ILR0SVCwnq7qGplM3AkaQSollRHKTO321ssTFfQ6iie4ZXp0QhHT4aOGkr3rkD5Yd6UpcRi-SuO64DSzB8vY7DGApK1ABOG3vEVyEzGmLOtlbGZjKPuk-8uw__"
+                    alt="Image 3" width="100">
+                <img style="width: 112px;
+            height: 52px;
+            top: 1398px;
+            left: 764px; 
+            scale: crop; 
+            margin-left: 155px;
+            filter: grayscale(100%);          
+            " src="https://s3-alpha-sig.figma.com/img/19d4/c777/59000715ea090ddfb3153fef2c2f6d30?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oYVWoA1U3eNo0fVphpknRJfrC3LkdETATkDyhOjnsDB0DTokb3AjcV79xPsu2qs1v61TWp31OvWomGgI7uWfE6qIKgzGgxSj3Qf43ybN6TAgUBqC5qx6xBsNMGgUVSd289kPo2Yh8V3Nl9Z-~6nJxKVWp1b0pmIPUq7~H99TE~Fv01FFkl~0BDozj9z6CtAhOjMs7iTBLq2Pg9SpC40yCVpLt5HIJ4G3lTNI4PgSo7iEVWpJ53QbrP5JVk0BpQgcT23z6azUpWeXBDtpzL48XkTPLL4-w025vksFQbj3h~am9KER87P0oexUUfAbj1Gy-I4bMgiR0Bi~cN-KTOdT-A__"
+                    alt="Image 4" width="100">
+                <img style="width: 227px;
+            height: 57px;
+            top: 1395px;
+            left: 948px;
+            gap: 0px;
+            opacity: 80%;
+            margin-left: 100px;
+            filter: grayscale(100%);
+            " src="https://s3-alpha-sig.figma.com/img/6351/862c/7383ee99b20fe80081cb6b365d2177a8?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dqwAQoXaY83LOjS5rSjnUmeSp2QMFP0Y4zL175M8-vTz0mawoF590CXDIWIEz8TXT9OjUyLa8nDLo92X3ZzRzul7FJmd1tmVOo92qjqEeV6fuIvJyAmCvnUcNlW~tnsWsgktcB28RfQ-ncJqoN3rMxa6AQ7gmrK5OK~RoKBusWgtSyiW2mlaLdXhtcFR6--RiCNMNGkenkrwisPBPykX64JoU6y89Et8OwSS7aT3ZJg-JXZ4BBl7it4~kDoz5nE8EqrWLYqUaLSwlMH~A~WJbJI3WHNo7fTC5B53syd4oXwD2v4r9wHe5blqD2Sr8RogO7Ht1IVXgJcImjqwDxS7EQ__"
+                    alt="Image 5" width="100">
+                <img style="
+            filter: grayscale(100%);
+            width: 121px;
+            height: 69px;
+            top: 1389px;
+            left: 371px;
+            opacity: 80%;
+            margin-left: 55px;
+            " src="https://s3-alpha-sig.figma.com/img/8683/eb83/3e8205af96a9ab98ac185052f167309e?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PrOHvA9KH9DKmyL2bbw7HR7Ti6ZvtcWjw6y92o2PGoH8D4UiXJY4Y10rLRHe~XloH2cqaRDkl7Ebfs7LBevTBmzeWVkZtdexMSdXVVEB063KH7P7j~3zg7dB2KwP6i7m3dQdfH5-PudOy4haSdCV8nDjXJmNdPJYM5GfW9Fh2Ea~VZf5iJ1NyfjlqJ2CfGJQgXKKxq87h8pYGIgHQZKpe-JvK0bkn4gT~eoU~QFcBU6qkueHmEMnJfTS8SRETwRiK1~cs4Or5CVOzlbtXTZ5-prrBRmPxgyvCUcmK9lxeWBhWb4I1TJDWkKfG83-X-43igvOXcgYl7DKr7KNO8tLNg__"
+                    alt="Image 6" width="100">
+            </div>
+
+            
+            <div class="contact-form">
+                <h2 style="font-family: Work Sans;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 46.92px;
+                text-align:center;margin-top: 100px;
+                ">Contact Us</h2>
+                <p style="font-family: Work Sans;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 28.15px;
+                text-align: center;
+                ">Ready for a space adventure like no other? Join Atom Space,<br> where your work can revolutionize the
+                    entire
+                    industry. <br> Click below – destiny beckons.</p>
+                <button class="button a" style="width: 224px;
+            height: 61px;
+            top: 1790px;
+            left: 608px;
+            gap: 0px;
+            border-radius: 34px ;
+            text-align: center;
+            font-family: Work Sans;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 23.46px;
+
+            ">Fill Form</button>
+
+            </div>
+            <div><img style="align-self: center;
+                            width: 594px; 
+                            height: 275px;
+                            margin-top: 85px;
+                            margin-left: 455px; 
+                            top: 1932px;
+                            margin-bottom: 90px; 
+                            left: 423px;"
+                    src="https://s3-alpha-sig.figma.com/img/a7e2/a912/d3b1bedae45e0f1f77b92737f5a9c1dc?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jLIgbREYgQR8lA97PYD5q~yg6pVFixa3EPafsoo-3eDIcRNv2LgTYXViEBe0yrfJsjbALuvUXC2NdeqyhwrK7zYL6KlJoYjns4o9ArE8si7JD3ceAGJy6hX0pXV49ZqeyAvwPqAcSvUIugydNRuDMePUBlq5ejAOMrU5-LjkiICIfpU2buKjb~DdzWXnu2qkudgj-BZx3lZZCSo402WA9vRZJCFYIIKU8w5i5ZlQVjIGgNxJBeChAj39fkGzxVnEy-vMMhDMe~vncCojP4iJ-vqPeC0uZY7tWSxG6Vc8Mr-V6O39jmsBaoM9LLeqz3Fw7q5dzevjXwas~uDlQvWUnA__"
+                    alt="socialmedia"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
